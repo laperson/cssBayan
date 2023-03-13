@@ -74,6 +74,9 @@ max-height: 30rem;
   .container {
     width: 45rem;
   }
+  h2 {
+    font-size: 1.5rem;
+  }
  }
 
 @media (max-width: 500px) { 
