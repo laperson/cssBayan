@@ -73,7 +73,7 @@ max-height: 30rem;
 }
 
 label:active h2 {
-  background-color: blueviolet;
+  background-color: rgb(197, 180, 212);
 }
 
 @media (min-width: 1367px) { 
