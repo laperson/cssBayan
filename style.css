@@ -66,5 +66,27 @@ label:hover img {
 height: initial;
 }
 
+@media (min-width: 1367px) { 
+  .container {
+    width: 45rem;
+  }
+ }
 
+@media (max-width: 500px) { 
+  .container {
+    width: 25rem; 
+  }
+ }
 
+ @media (max-width: 420px) { 
+  .container {
+    width: 20rem;
+  }
+ }
+
+@media (max-width: 340px) { 
+  .container {
+    width: 18rem;
+    font-size: 1rem;
+  }
+ }
