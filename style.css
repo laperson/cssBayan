@@ -24,6 +24,7 @@ input:checked + label h2 {
 
 label {
   height: min-content;
+  cursor: pointer;
 }
 
 span {
