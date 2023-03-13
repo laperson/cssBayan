@@ -31,6 +31,7 @@ span {
   visibility: hidden;
   font-weight: 900;
   font-size: 1.5rem;
+  transition: transform 0.5s;
 }
 
 .h {
@@ -40,13 +41,16 @@ span {
 
 input {
   display: none;
+  
 }
 
 img {
   display: block;
-  height: 0;
+  max-height: 0;
+  height: auto;
   width: 70%;
   margin: 0 auto 0.5rem;
+  transition: max-height 1s; 
 }
 
 hr {
@@ -55,15 +59,15 @@ hr {
 }
 
 :checked + label img {
-  height: initial;
+  max-height: 30rem;
+}
+
+label:hover img {
+max-height: 30rem;
 }
 
 :checked + label span{
   transform: rotate(45deg);
-}
-
-label:hover img {
-height: initial;
 }
 
 @media (min-width: 1367px) { 
