@@ -1,0 +1,105 @@
+
+.container {
+  width: 30rem;
+  margin: 0 auto;
+}
+
+.container:hover  h2{
+  color: black;
+}
+
+.container:hover span {
+  visibility: visible;
+}
+
+h2 {
+  color:green;
+  margin: 0;
+  font-size: 1rem;
+}
+
+input:checked + label h2 {
+  color: black;
+}
+
+label {
+  height: min-content;
+  cursor: pointer;
+}
+
+span {
+  visibility: hidden;
+  font-weight: 900;
+  font-size: 1.5rem;
+  transition: transform 0.5s;
+}
+
+
+
+.h {
+  display: flex;
+  justify-content:space-between;
+}
+
+input {
+  display: none;
+  
+}
+
+img {
+  display: block;
+  max-height: 0;
+  height: auto;
+  width: 70%;
+  margin: 0 auto 0.5rem;
+  transition: max-height 1s; 
+}
+
+hr {
+  opacity: 0.5;
+  margin: 0 0 0.7rem ;
+}
+
+:checked + label img {
+  max-height: 30rem;
+}
+
+label:hover img {
+max-height: 30rem;
+}
+
+:checked + label span{
+  transform: rotate(45deg);
+}
+
+label:active h2 {
+  background-color: rgb(197, 180, 212);
+}
+
+@media (min-width: 1367px) { 
+  .container {
+    width: 45rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+ }
+
+@media (max-width: 500px) { 
+  .container {
+    width: 25rem; 
+  }
+ }
+
+ @media (max-width: 420px) { 
+  .container {
+    width: 20rem;
+  }
+ }
+
+@media (max-width: 340px) { 
+  .container {
+    width: 18rem;
+    font-size: 1rem;
+  }
+ }
