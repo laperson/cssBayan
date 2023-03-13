@@ -1,0 +1,69 @@
+
+.container {
+  width: 30rem;
+  margin: 0 auto;
+}
+
+.container:hover  h2{
+  color: black;
+}
+
+.container:hover span {
+  visibility: visible;
+}
+
+h2 {
+  color:green;
+  margin: 0;
+  font-size: 1rem;
+}
+
+input:checked + label h2 {
+  color: black;
+}
+
+label {
+  height: min-content;
+}
+
+span {
+  visibility: hidden;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.h {
+  display: flex;
+  justify-content:space-between;
+}
+
+input {
+  display: none;
+}
+
+img {
+  display: block;
+  height: 0;
+  width: 70%;
+  margin: 0 auto 0.5rem;
+}
+
+hr {
+  opacity: 0.5;
+  margin: 0 0 0.7rem ;
+}
+
+:checked + label img {
+  height: initial;
+}
+
+:checked + label span{
+  transform: rotate(45deg);
+}
+
+label:hover img {
+height: initial;
+}
+
+
+
